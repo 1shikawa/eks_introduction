@@ -15,12 +15,12 @@ spec:
         app: test-hpa
     spec:
       containers:
-      - image: nginx
-        name: test-hpa
-        resources:
-          limits:
-            cpu: 100m
-            memory: 100Mi
-          requests:
-            cpu: 30m # make this pod consume a lot of CPU resource on node
-            memory: 30Mi
+        - image: nginx
+          name: test-hpa
+          resources:
+            limits:
+              cpu: 100m
+              memory: 100Mi
+            requests:
+              cpu: 30m # make this pod consume a lot of CPU resource on node
+              memory: 30Mi
