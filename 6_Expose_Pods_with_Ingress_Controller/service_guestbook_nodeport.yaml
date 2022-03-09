@@ -7,11 +7,11 @@ metadata:
   name: guestbook
   namespace: default
 spec:
+  type: NodePort
   ports:
-  - nodePort: 30605
-    port: 3000
-    protocol: TCP
-    targetPort: http-server
+    - nodePort: 30605
+      port: 3000
+      protocol: TCP
+      targetPort: http-server
   selector:
     app: guestbook
-  type: NodePort

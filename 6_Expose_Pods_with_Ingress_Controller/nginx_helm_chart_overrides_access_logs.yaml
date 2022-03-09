@@ -7,7 +7,7 @@ controller:
       service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "443" # unless ports specified, even port 80 will be SSL provided
       # access logs for AWS ELB
       service.beta.kubernetes.io/aws-load-balancer-access-log-enabled: "true"
-      service.beta.kubernetes.io/aws-load-balancer-access-log-emit-interval: "60"  # The interval for publishing the access logs. You can specify an interval of either 5 or 60 (minutes).
+      service.beta.kubernetes.io/aws-load-balancer-access-log-emit-interval: "60" # The interval for publishing the access logs. You can specify an interval of either 5 or 60 (minutes).
       service.beta.kubernetes.io/aws-load-balancer-access-log-s3-bucket-name: "eks-from-eksctl-elb-access-log"
       service.beta.kubernetes.io/aws-load-balancer-access-log-s3-bucket-prefix: "public-elb"
     targetPorts:
