@@ -18,12 +18,12 @@ spec:
         run: irsa-iam-test
     spec:
       containers:
-      - command:
-        - /bin/sh
-        - -c
-        - sleep 500
-        image: amazon/aws-cli
-        name: irsa-iam-test
-        resources: {}
+        - command:
+            - /bin/sh
+            - -c
+            - sleep 500
+          image: amazon/aws-cli
+          name: irsa-iam-test
+          resources: {}
       serviceAccountName: irsa-service-account
 status: {}
